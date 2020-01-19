@@ -509,7 +509,7 @@ public class HomeActivity extends AppCompatActivity {
         alertDialog.show();
     }
 
-
+// ni untuk filter
     public void fetchData(final double latitude, final double longitude){
         FirebaseDatabase.getInstance().getReference("Workshops").addValueEventListener(new ValueEventListener() {
             @Override
