@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/button_proceed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_rounded"
+        android:text="proceed"
+        android:textSize="22sp" />
+
+
+</LinearLayout>
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".Activity.Ride.AcceptedRiderListActivity"-->
+<!--    android:background="@color/colorSnow"-->
+<!--    android:orientation="vertical">-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Pickup Ride Location"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:textColor="@color/quantum_black_100"/>-->
+<!--        <ImageView-->
+<!--            android:id="@+id/iv_zoom_out"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:srcCompat="@drawable/ic_zoom_out_map" />-->
+
+<!--    </LinearLayout>-->
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:layout_gravity="center_horizontal|center_vertical"-->
+<!--        app:cardCornerRadius="12dp"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:layout_marginRight="10dp"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        app:cardElevation="12dp">-->
+<!--        <LinearLayout-->
+<!--            android:id="@+id/layout1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+
+<!--            android:layout_gravity="top">-->
+
+<!--            <fragment-->
+<!--                android:id="@+id/accepted_rider_list_map"-->
+<!--                android:name="com.google.android.gms.maps.SupportMapFragment"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent">-->
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent">-->
+<!--                    <com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_marginBottom="30dp"-->
+<!--                        android:layout_alignParentRight="true">-->
+<!--                        <com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBar-->
+<!--                            android:id="@+id/verticalSeekBar"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="0dp"-->
+<!--                            android:progress="12"-->
+<!--                            android:max="15"-->
+<!--                            android:splitTrack="false"-->
+<!--                            app:seekBarRotation="CW270">-->
+<!--                        </com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBar>-->
+<!--                    </com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper>-->
+<!--                </RelativeLayout>-->
+<!--            </fragment>-->
+<!--        </LinearLayout>-->
+<!--    </androidx.cardview.widget.CardView>-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Accepted Rider List"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:textColor="@color/quantum_black_100"/>-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/iv_car"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:srcCompat="@drawable/ic_ride" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_accepted_list_seat_available"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="4/4"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:textColor="@color/quantum_black_100"/>-->
+<!--    </LinearLayout>-->
+<!--    <ScrollView-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:background="@android:color/white"-->
+<!--        >-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical">-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="250dp"-->
+<!--                android:layout_below="@+id/layout1">-->
+<!--                <androidx.recyclerview.widget.RecyclerView-->
+<!--                    android:id="@+id/requestRideRecyclerView"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:background="@color/colorSnow"-->
+<!--                    android:scrollbars="vertical" />-->
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
+<!--    </ScrollView>-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal">-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_margin="5dp"-->
+<!--            android:layout_weight="1">-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Total Cost"-->
+<!--                android:textSize="15sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginTop="1dp"-->
+<!--                android:layout_marginBottom="1dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:textColor="@color/quantum_black_100"-->
+<!--                tools:ignore="NestedWeights" />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="RM 10"-->
+<!--                android:textSize="20sp"-->
+<!--                android:textStyle="normal"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginTop="1dp"-->
+<!--                android:layout_marginBottom="1dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:textColor="@color/quantum_black_100"/>-->
+<!--        </LinearLayout>-->
+<!--        <RelativeLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="fill_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:orientation="vertical">-->
+<!--            <Button-->
+<!--                android:id="@+id/btn_send_confirmation_ride"-->
+<!--                android:layout_width="180dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:padding="5dp"-->
+<!--                android:layout_centerInParent="true"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/buttonshape"-->
+<!--                android:textColor="#ffffff"-->
+<!--                android:text="Send Confirmation to rider" />-->
+<!--        </RelativeLayout>-->
+
+
+<!--    </LinearLayout>-->
+
+<!--</LinearLayout>-->

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="15dp"
+    app:strokeWidth="1dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="3dp"
+    app:cardCornerRadius="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="4dp">
+
+        <ImageView
+            android:id="@+id/images"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            tools:srcCompat="@tools:sample/avatars" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="4dp">
+
+
+        <TextView
+            android:id="@+id/workshopname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="208dp"
+            android:text="Workshop Name"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_card_event_location"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/tv_card_event_name"-->
+<!--            android:layout_marginTop="6dp"-->
+<!--            android:text="Location"-->
+<!--            android:textColor="@android:color/black"-->
+<!--            android:textSize="15sp"-->
+<!--            android:textStyle="normal" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_card_event_state"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/tv_card_event_name"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_marginTop="6dp"-->
+<!--            android:layout_toEndOf="@+id/tv_card_event_location"-->
+<!--            android:text="State"-->
+<!--            android:textColor="@android:color/black"-->
+<!--            android:textSize="15sp"-->
+<!--            android:textStyle="normal" />-->
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/workshopname"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="240dp"
+            android:text="Address"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="italic" />
+        <TextView
+            android:id="@+id/contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/address"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="280dp"
+            android:text="Contact"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="86dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="210dp"
+            android:layout_marginEnd="5dp"
+            android:text="Distance"
+            android:textColor="@android:color/black"
+            android:textSize="17sp"
+            android:textStyle="normal" />
+
+
+        <TextView
+            android:id="@+id/spintext"
+            android:layout_width="86dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/distance"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="5dp"
+            android:text="Category"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:id="@+id/whatsapp"
+            android:layout_width="73dp"
+            android:layout_height="19dp"
+            android:layout_marginStart="-23dp"
+            android:layout_marginTop="280dp"
+            android:layout_toEndOf="@+id/contact"
+            app:srcCompat="@drawable/download" />
+
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>
