@@ -524,7 +524,7 @@ public class HomeActivity extends AppCompatActivity {
                     final Location myLocation = new Location("myLocation");
                     myLocation.setLatitude(latitude);
                     myLocation.setLongitude(longitude);
-
+//Ni baru
                     if (myLocation.distanceTo(workshopLocation) <= 20000){
                         FirebaseDatabase.getInstance().getReference("nearby_workshop").child(FirebaseAuth.getInstance().getCurrentUser().getUid())
                                 .child(postSnapshot.getKey()).setValue(workshopinformation).addOnSuccessListener(new OnSuccessListener<Void>() {
